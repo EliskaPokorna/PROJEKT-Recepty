@@ -33,3 +33,145 @@ Nastav je receptům jako obrázky na pozadí (tj. nepřidávej je jako <img> do 
 Na rozložení prvků NEPOUŽÍVEJ absolutní pozicování, ale pouze flexboxy.
 Flexboxy mohou být vnořené do sebe, klidně několikrát.
 */
+
+
+.hlavni-recept {
+	background-image: url(images/salat.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+	min-height: 200px;
+}
+
+.recept2 {
+	background-image: url(images/chlebicek.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+	min-height: 90px;
+}
+
+.recept3 {
+	background-image: url(images/cizrna.jpg);
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+	min-height: 90px;
+}
+
+
+.recept4 {
+	background-image: url(images/tacos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+	min-height: 90px;
+}
+
+.recept5 {
+	background-image: url(images/burger.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+	min-height: 90px;
+}
+
+.popis, .nadpis {
+	color: white;
+	padding: 10px;
+}
+
+.nadpis {
+	font-size: 18px;
+}
+
+h2 {
+	margin-bottom: 0;
+}
+
+.nadpis1 {
+	font-size: 28px;
+}
+
+.popis {
+	font-size: 14px;
+}
+
+.recept, .hlavni-recept {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.popis {
+	display: flex;
+	justify-content: space-between;
+}
+
+.recept, .recept {
+	border-top: 2px solid white;
+}
+
+
+@media screen and (min-width: 480px) {
+
+	.vedlejsi {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.hlavni-recept {
+		width: 100%;
+		min-height: 250px;
+	}
+
+	.recept {
+		flex: 1 1 calc(100% / 2);
+		min-height: 150px;
+	}
+
+	.nadpis {
+		font-size: 22px;
+	}
+
+	.nadpis1 {
+		font-size: 36px;
+	}
+	
+	.recept3, .recept5 {
+		border-left: 2px solid white;
+	}
+
+	.popis, .nadpis {
+		padding: 20px;
+	}
+}
+
+
+@media screen and (min-width: 860px) {
+
+	.recepty {
+		display: flex;
+	}
+
+	.nadpis {
+		font-size: 28px;
+	}
+
+	.nadpis1 {
+		font-size: 48px;
+	}
+
+	.hlavni-recept {
+		min-height: 400px;
+	}
+
+	.recept {
+		min-height: 200px;
+	}
+
+	.recept2, .recept4 {
+		border-left: 2px solid white;
+	}
+
+}
