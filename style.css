@@ -148,7 +148,7 @@ h2 {
 }
 
 
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 1010px) {
 
 	.recepty {
 		display: flex;
@@ -164,10 +164,15 @@ h2 {
 
 	.hlavni-recept {
 		min-height: 400px;
+		flex: 1 0 33.333333%;
 	}
 
 	.recept {
 		min-height: 200px;
+	}
+
+	.vedlejsi {
+		flex: 1 0 66.6666%;
 	}
 
 	.recept2, .recept4 {
